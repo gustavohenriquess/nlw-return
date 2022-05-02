@@ -1,4 +1,4 @@
-![nlw-return-logo](/assets/nlw-logo.png | width=100)
+![nlw-return-logo](/assets/nlw-logo.png)
 
 This project is a crash course from 🚀[Rocketseat](https://www.rocketseat.com.br/)🚀 focused on building an app from start to finish.
 
