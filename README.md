@@ -1,10 +1,10 @@
-![nlw-return-logo](/assets/nlw-logo.png)
+![nlw-return-logo](/assets/nlw-logo.png | width=100)
 
-Este projeto é um curso intensivo da 🚀[Rocketseat](https://www.rocketseat.com.br/)🚀 focado na construção de um aplicativo do início ao fim.
+This project is a crash course from 🚀[Rocketseat](https://www.rocketseat.com.br/)🚀 focused on building an app from start to finish.
 
 ##
 
-O projeto consiste em um sistema de feedback que pode ser integrado em qualquer site ou aplicativo.
+The project consists of a feedback system that can be integrated into any website or application.
 
 - [ ] 🌐 Web
 - [ ] ⚙️ Back End
