@@ -6,7 +6,7 @@ This project is a crash course from 🚀[Rocketseat](https://www.rocketseat.com.
 
 The project consists of a feedback system that can be integrated into any website or application.
 
-- [ ] 🌐 Web
+- [x] 🌐 Web
 - [ ] ⚙️ Back End
 - [ ] 📱 Mobile
 
