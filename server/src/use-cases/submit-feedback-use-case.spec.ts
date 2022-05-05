@@ -3,14 +3,14 @@ import { SubmitFeedbackUseCase } from "./submit-feedback-use-case";
 const createFeedbackSpy = jest.fn();
 const sendMailSpy = jest.fn();
 
+const submitFeedback = new SubmitFeedbackUseCase(
+  { create: createFeedbackSpy },
+  { sendMail: sendMailSpy }
+);
+
 describe("Submit feedback", () => {
   it("should be able to submit feedback", async () => {
-    const submitFeedback = new SubmitFeedbackUseCase(
-      { create: createFeedbackSpy },
-      { sendMail: sendMailSpy }
-    );
-
-    expect(
+    await expect(
       submitFeedback.execute({
         type: "BUG",
         comment: "Exempla comment",
@@ -23,12 +23,7 @@ describe("Submit feedback", () => {
   });
 
   it("should not be able to submit feedback without type", async () => {
-    const submitFeedback = new SubmitFeedbackUseCase(
-      { create: async () => {} },
-      { sendMail: async () => {} }
-    );
-
-    expect(
+    await expect(
       submitFeedback.execute({
         type: "",
         comment: "Exempla comment",
@@ -38,12 +33,7 @@ describe("Submit feedback", () => {
   });
 
   it("should not be able to submit feedback without comment", async () => {
-    const submitFeedback = new SubmitFeedbackUseCase(
-      { create: async () => {} },
-      { sendMail: async () => {} }
-    );
-
-    expect(
+    await expect(
       submitFeedback.execute({
         type: "BUG",
         comment: "",
@@ -53,12 +43,7 @@ describe("Submit feedback", () => {
   });
 
   it("should not be able to submit feedback with an invalid screenshot", async () => {
-    const submitFeedback = new SubmitFeedbackUseCase(
-      { create: async () => {} },
-      { sendMail: async () => {} }
-    );
-
-    expect(
+    await expect(
       submitFeedback.execute({
         type: "BUG",
         comment: "INVALID_SCREENSHOT",
