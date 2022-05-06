@@ -8,7 +8,7 @@ The project consists of a feedback system that can be integrated into any websit
 
 - [x] 🌐 Web
 - [x] ⚙️ Back End
-- [ ] 📱 Mobile
+- [x] 📱 Mobile
 
 ## Libs
 
