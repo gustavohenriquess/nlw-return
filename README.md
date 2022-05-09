@@ -11,6 +11,8 @@ This project is a crash course from 🚀[Rocketseat](https://www.rocketseat.com.
 - [x] ⚙️ Server (Backend)
 - [x] 📱 Mobile
 
+## [Click here](https://nlw-return-liard.vercel.app/) to test how it turned out!
+
 # Technologies used
 
 - Typescript
